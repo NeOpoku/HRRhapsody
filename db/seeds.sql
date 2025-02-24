@@ -22,5 +22,5 @@ INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES
   ('Charlie', 'Brown', (SELECT id FROM role WHERE title = 'Sales Manager'), NULL),
   ('Dana', 'White', (SELECT id FROM role WHERE title = 'Sales Representative'), 3),
   ('Evan', 'Taylor', (SELECT id FROM role WHERE title = 'Accountant'), NULL),
-  ('Fiona', 'Davis', (SELECT id FROM role WHERE title = 'Financial Analyst'), 5),
+  ('Samuel', 'Opoku', (SELECT id FROM role WHERE title = 'Financial Analyst'), 5),
   ('Grace', 'Wilson', (SELECT id FROM role WHERE title = 'HR Specialist'), NULL);
