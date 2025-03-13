@@ -37,9 +37,6 @@ Insert gif or link to demo
 
 ## Usage/Examples
 
-```javascript
-import Component from 'HRRhapsody'
-
 node index.js
 ```
 
