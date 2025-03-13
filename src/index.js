@@ -1,5 +1,35 @@
+// Load environment variables from .env
+require('dotenv').config();
+
 //import functions from queries file//
 import { getDepartments, getRoles, getEmployees, addDepartment, addRole, addEmployee, updateEmployeeRole } from './queries.js';
+// index.js
+
+// Import the Pool class from pg
+const { Pool } = require('pg');
+
+// Create a connection pool with your PostgreSQL 17 credentials
+const pool = new Pool({
+  user: process.env.DB_USER,      // Your PostgreSQL username
+  host: process.env.DB_HOST,      // Host (e.g., 'localhost')
+  database: process.env.DB_DATABASE,  // Your database name
+  password: process.env.DB_PASSWORD,  // Your database password
+  port: process.env.DB_PORT,      // PostgreSQL port, usually 5432
+});
+
+// Test the connection with a simple query
+async function testConnection() {
+  try {
+    const res = await pool.query('SELECT NOW()');
+    console.log("Connected to PostgreSQL 17! Current time:", res.rows[0]);
+  } catch (err) {
+    console.error("Error connecting to PostgreSQL 17:", err);
+  }
+}
+
+// Kick off the connection test
+testConnection();
+
 
 //import inquirer for prompts//
 import inquirer from 'inquirer';
