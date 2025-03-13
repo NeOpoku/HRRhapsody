@@ -1,12 +1,15 @@
 // Load environment variables from .env
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
+
+import { Pool } from 'pg';
 
 //import functions from queries file//
 import { getDepartments, getRoles, getEmployees, addDepartment, addRole, addEmployee, updateEmployeeRole } from './queries.js';
-// index.js
 
-// Import the Pool class from pg
-const { Pool } = require('pg');
+ // index.js
+// Import and require Pool (node-postgres)
+
 
 // Create a connection pool with your PostgreSQL 17 credentials
 const pool = new Pool({
