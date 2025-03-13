@@ -35,11 +35,6 @@ Install Dependencies
 Insert gif or link to demo
 
 
-## Usage/Examples
-
-node index.js
-```
-
 ## Technologies Used
 
 - Node.js: Server-side JavaScript runtime.
