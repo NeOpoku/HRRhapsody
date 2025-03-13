@@ -1,5 +1,4 @@
 {
-  "dependencies": {
-    "inquirer": "^8.2.4"
-  }
-}
+  "name": "inquirer",
+  "version": "8.2.4",
+}}
