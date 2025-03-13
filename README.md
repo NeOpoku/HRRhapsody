@@ -40,7 +40,6 @@ Insert gif or link to demo
 node index.js
 ```
 
-
 ## Technologies Used
 
 - Node.js: Server-side JavaScript runtime.
@@ -48,6 +47,7 @@ node index.js
 - PostgreSQL: Robust relational database management system.
 - pg: PostgreSQL client for Node.js.
 - dotenv: Module to load environment variables from a .env file.
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
